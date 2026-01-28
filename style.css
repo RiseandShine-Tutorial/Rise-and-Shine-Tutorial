@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    padding: 25px;
+}
+
+.logo {
+    width: 90px;
+}
+
+.vision {
+    width: 90px;
+}
+
+.institue {
+    width: 350px;
+    height: auto;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.home-img {
+    width: 350px;
+    height: 350px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* NAVIGATION */
+nav {
+    background: #ff9800;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* SECTION */
+.section {
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.home-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.link-box {
+    flex: 1;
+    min-width: 150px;
+    max-width: 250px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.link-box a {
+    color: #2a5298;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.link-box a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    margin-top: 15px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* FACULTY SECTION */
+.faculty-section {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #f0e6ff 0%, #e6d9ff 100%);
+}
+
+.faculty-card {
+    display: flex;
+    gap: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    align-items: flex-start;
+}
+
+.faculty-img {
+    width: 200px;
+    height: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.faculty-details {
+    flex: 1;
+    text-align: left;
+}
+
+.faculty-details h3 {
+    color: #1e3c72;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.faculty-title {
+    color: #2a5298;
+    margin-bottom: 8px;
+}
+
+.faculty-subject {
+    color: #ff9800;
+    margin-bottom: 15px;
+}
+
+.faculty-details p {
+    margin: 12px 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.faculty-details ul {
+    margin: 10px 0 10px 20px;
+    color: #333;
+}
+
+.faculty-details li {
+    margin: 8px 0;
+}
+
+/* FACULTY GRID SECTION */
+.faculty-grid-section {
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #e6f4ff 0%, #cce6ff 100%);
+}
+
+.faculty-grid-section h2 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faculty-col {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.faculty-col h3 {
+    color: #1e3c72;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.faculty-role {
+    color: #ff9800;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.faculty-qual,
+.faculty-dept,
+.faculty-exp,
+.faculty-place,
+.faculty-spec {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #333;
+    margin: 8px 0;
+}
+
+.faculty-link {
+    color: #2a5298;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.faculty-link:hover {
+    text-decoration: underline;
+    color: #1e3c72;
+}
+
+@media (max-width: 1024px) {
+    .faculty-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .faculty-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #1e3c72;
+}
+
+img {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+/* COURSE CARDS */
+.course-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* CONTACT */
+.contact {
+    background: linear-gradient(135deg, #fff4e6 0%, #ffe6cc 100%);
+}
+
+/* FOOTER */
+footer {
+    background: #1e3c72;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}

@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f6ff;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: white;
+    padding: 25px;
+}
+
+.logo {
+    width: 40px;
+}
+
+/* NAV BAR */
+nav {
+    background: #ff9800;
+    padding: 12px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* SECTIONS */
+.section {
+    padding: 50px 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #1e3c72;
+}
+
+/* HOME IMAGE */
+.home img,
+.cet img {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+/* COURSES */
+.course-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* CONTACT */
+.contact {
+    background: #fde3f6;
+}
+
+/* FOOTER */
+footer {
+    background: #1e3c72;
+    color: white;
+    padding: 15px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+}
