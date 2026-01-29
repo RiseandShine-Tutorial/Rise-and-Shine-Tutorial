@@ -102,11 +102,12 @@ nav a:hover {
     color: #333;
 }
 
-/* FACULTY SECTION */
-.faculty-section {
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #f0e6ff 0%, #e6d9ff 100%);
+
+.faculty-section .faculty-section {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
 }
+
 
 .faculty-card {
     display: flex;
@@ -119,6 +120,25 @@ nav a:hover {
     box-shadow: 0 0 12px rgba(0,0,0,0.1);
     align-items: flex-start;
 }
+.faculty-card {
+    display: flex;
+    gap: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    align-items: flex-start;
+    border-left: 6px solid #2a5298; /* nice professional accent */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faculty-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
 
 .faculty-img {
     width: 200px;
@@ -274,10 +294,31 @@ img {
     background: linear-gradient(135deg, #fff4e6 0%, #ffe6cc 100%);
 }
 
-/* FOOTER */
+
 footer {
     background: #1e3c72;
     color: white;
     padding: 15px;
     margin-top: 30px;
 }
+
+.welcome-box {
+    background: linear-gradient(135deg, #e3f2fd, #f1f8ff); 
+}
+
+.vision-box {
+    background: linear-gradient(135deg, #e8f5e9, #f1fff3); 
+}
+
+.whyus-box {
+    background: linear-gradient(135deg, #fff3e0, #fff8f0); 
+}
+
+
+.link-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+
