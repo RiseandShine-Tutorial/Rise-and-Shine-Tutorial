@@ -320,5 +320,19 @@ footer {
     box-shadow: 0 8px 18px rgba(0,0,0,0.15);
     transition: 0.3s ease;
 }
+/* Individual Teacher Card Colors */
+.usman-card {
+    background: linear-gradient(135deg, #e3f2fd, #f8fbff); /* soft blue */
+}
+
+.reshma-card {
+    background: linear-gradient(135deg, #e8f5e9, #f6fff8); /* soft green */
+}
+
+.vayeez-card {
+    background: linear-gradient(135deg, #fff3e0, #fff8f0); /* soft peach */
+}
+
+
 
 
